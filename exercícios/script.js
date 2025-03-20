@@ -75,3 +75,23 @@ media(prompt("N1"), prompt("N2: "), prompt("N3: "));
 
 /////ex09/////////////////////////////////
 
+for(multiplo=1; multiplo<=20; multiplo++){
+    if (multiplo % 3 == 0)
+    {
+       console.log(multiplo + " multiplo de 3");
+    }else{
+        console.log(multiplo + " não é multiplo de 3");
+    }
+
+}
+
+/////ex10/////////////////////////////////    
+
+function verificarpalindromo(str){
+    str2 = str.split(" ");
+    str2 = str2.reverse();
+    str2 = str2.join(" ");
+    return console.log(str === str2);
+
+}
+verificarpalindromo(prompt("Digite algo"))
