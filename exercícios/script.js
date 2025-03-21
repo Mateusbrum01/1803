@@ -1,6 +1,6 @@
 /////ex01/////////////////////////////////
 
-function verfificarPar(numero) {
+/*function verfificarPar(numero) {
     if (numero % 2 === 0) {
         console .log("Número par");
     } else {
@@ -94,23 +94,57 @@ function verificarpalindromo(str){
     return console.log(str === str2);
 
 }
-verificarpalindromo(prompt("Digite algo"))
+verificarpalindromo(prompt("Digite algo"))*/
 
 /////ex11///////////////////////////////// 
 
+function verificarSinal(x) {
+if (x > 0){console.log("Positivo")}
+if (x < 0){console.log("Negativo")}
+if (x = 0){console.log("Zero")}
+}
+let frase = prompt("Digite um número: ");
+verificarSinal(frase);
+
+
 /////ex12///////////////////////////////// 
 
+let texto2 = prompt("Qual a temperatura em celisus? ");
 
+function converterTemperatura(celsius){
+    let faren = (celsius * (9/5)) + 32;
+    console.log("Essa temperatura em farenheits é " + faren);
+}                                                                                                         
+converterTemperatura(texto2);
 
 /////ex13///////////////////////////////// 
 
+let soma = 0;
+while (numero <= 100) {
+  soma = soma + numero;
+  numero++;
+}
+console.log("A soma dos números de 1 até 100 é " + soma);
+
 /////ex14///////////////////////////////// 
+
+function substituirPalavra(text){
+    console.log(text.replace(/azul/g, "vermelho"));
+}
+
+let texto = prompt("Digite o texto: ");
+substituirPalavra(texto);
 
 /////ex15///////////////////////////////// 
 
 /////ex16///////////////////////////////// 
 
+let fruta= ["uva", "banana", "laranja", "melão"];
+console.log(fruta[2]);
+
 /////ex17///////////////////////////////// 
+
+
 
 /////ex18///////////////////////////////// 
 
@@ -118,7 +152,24 @@ verificarpalindromo(prompt("Digite algo"))
 
 /////ex20///////////////////////////////// 
 
+let palavra = prompt("Digitea a palavra");
+
+function contarVogais(palavras){
+    const vogais = "aeiouAEIOU"
+    let contador = 0;
+
+    for (let letra of palavra){
+        if(vogais.includes(letra)){
+            contador++;
+        }
+    }
+    console.log(contador);
+}
+contarVogais(palavra);
+
 /////ex21///////////////////////////////// 
+
+
 
 /////ex22///////////////////////////////// 
 
