@@ -98,83 +98,155 @@ verificarpalindromo(prompt("Digite algo"))*/
 
 /////ex11///////////////////////////////// 
 
-function verificarSinal(x) {
-if (x > 0){console.log("Positivo")}
-if (x < 0){console.log("Negativo")}
-if (x = 0){console.log("Zero")}
-}
-let frase = prompt("Digite um número: ");
-verificarSinal(frase);
-
-
-/////ex12///////////////////////////////// 
-
-let texto2 = prompt("Qual a temperatura em celisus? ");
-
-function converterTemperatura(celsius){
-    let faren = (celsius * (9/5)) + 32;
-    console.log("Essa temperatura em farenheits é " + faren);
-}                                                                                                         
-converterTemperatura(texto2);
-
-/////ex13///////////////////////////////// 
-
-let soma = 0;
-while (numero <= 100) {
-  soma = soma + numero;
-  numero++;
-}
-console.log("A soma dos números de 1 até 100 é " + soma);
-
-/////ex14///////////////////////////////// 
-
-function substituirPalavra(text){
-    console.log(text.replace(/azul/g, "vermelho"));
-}
-
-let texto = prompt("Digite o texto: ");
-substituirPalavra(texto);
-
-/////ex15///////////////////////////////// 
-
-/////ex16///////////////////////////////// 
-
-let fruta= ["uva", "banana", "laranja", "melão"];
-console.log(fruta[2]);
-
-/////ex17///////////////////////////////// 
-
-
-
-/////ex18///////////////////////////////// 
-
-/////ex19///////////////////////////////// 
-
-/////ex20///////////////////////////////// 
-
-let palavra = prompt("Digitea a palavra");
-
-function contarVogais(palavras){
-    const vogais = "aeiouAEIOU"
-    let contador = 0;
-
-    for (let letra of palavra){
-        if(vogais.includes(letra)){
-            contador++;
-        }
+/*function verificarSinal(x) {
+    if (x > 0){console.log("Positivo")}
+    if (x < 0){console.log("Negativo")}
+    if (x = 0){console.log("Zero")}
     }
-    console.log(contador);
-}
-contarVogais(palavra);
+    let frase = prompt("Digite um número: ");
+    verificarSinal(frase); 
+    
+    
+    /////ex12///////////////////////////////// 
+    
+    let texto2 = prompt("Qual a temperatura em celisus? ");
+    
+    function converterTemperatura(celsius){
+        let faren = (celsius * (9/5)) + 32;
+        console.log("Essa temperatura em farenheits é " + faren);
+    }                                                                                                         
+    converterTemperatura(texto2); 
+    
+    /////ex13///////////////////////////////// 
+    
+    let soma = 0;
+    let numero = 1; 
 
-/////ex21///////////////////////////////// 
+    while (numero <= 100) {
+    soma = soma + numero;
+    numero++;
+    }   
+
+    console.log("A soma dos números de 1 até 100 é " + soma);
+
+    
+    /////ex14///////////////////////////////// 
+    
+    function substituirPalavra(text){
+        console.log(text.replace(/azul/g, "vermelho"));
+    }
+    
+    let texto = prompt("Digite o texto: ");
+    substituirPalavra(texto);
+
+    
+    
+    /////ex15///////////////////////////////// 
+
+   
+    function verificarTamanho(str) {
+    let tamanho = str.length; 
+    
+    if (tamanho > 10) {
+        console.log("A string tem mais de 10 caracteres.");
+    } else {
+        console.log("A string não tem mais de 10 caracteres.");
+    }
+     }
+    
+    let entrada = prompt("Digite uma string para verificar o tamanho:");
+    verificarTamanho(entrada);
+
+    
+    /////ex16///////////////////////////////// 
+    
+
+    let fruta= ["uva", "banana", "laranja", "melão"];
+    console.log(fruta[2]);
+
+    
+    
+    /////ex17///////////////////////////////// 
+    
+    function saudacao(nome, saudacao = "Bem-vindo(a)") {
+        return `${saudacao}, ${nome}!`;
+    }
+    
+    let nomeUsuario = prompt("Digite seu nome: ");
+    let mensagem = saudacao(nomeUsuario);
+    console.log(mensagem);
+    
+    
+    /////ex18///////////////////////////////// 
+
+    function verificarAprovacao(nota) {
+     return nota >= 6 ? "Aprovado" : "Reprovado";
+    }
+    
+    let resultado = verificarAprovacao(parseFloat(prompt("Digite sua nota:")));
+    console.log(resultado);
+    
+    /////ex19///////////////////////////////// 
+
+    console.log("Números pares de 0 a 30:");
+     for (let i = 0; i <= 30; i++) {
+    if (i % 2 === 0) {
+        console.log(i);
+    }
+   }
+    
+    /////ex20///////////////////////////////// 
+    
+    
+
+    let palavra = prompt("Digitea a palavra");
+    
+    function contarVogais(palavras){
+        const vogais = "aeiouAEIOU"
+        let contador = 0;
+    
+        for (let letra of palavra){
+            if(vogais.includes(letra)){
+                contador++;
+            }
+        }
+        console.log(contador);
+    }
+    contarVogais(palavra);
+    
+    
+    /////ex21///////////////////////////////// 
+    
+    function somarArray(num){
+        let sum = num.reduce((partialSum, a) => partialSum + a, 0);
+        console.log(sum);
+    }
+    
+    somarArray([1, 2, 3]);
+    
+    
+    /////ex22///////////////////////////////// 
+    
+    const dobrarNumero = numero => numero * 2;
+    console.log("O dobro é: " + dobrarNumero(prompt("Digite um número para dobrar:")));
 
 
+    /////ex23///////////////////////////////// 
 
-/////ex22///////////////////////////////// 
+    let contador = 2;
+    while (contador <= 20) console.log(contador += 2);
 
-/////ex23///////////////////////////////// 
+    
+    /////ex24/////////////////////////////////
+    
+    const capitalizar = str => str.charAt(0).toUpperCase() + str.slice(1);
+    console.log(capitalizar(prompt("Digite uma palavra:")));
 
-/////ex24///////////////////////////////// 
-
-/////ex25///////////////////////////////// 
+    
+    /////ex25///////////////////////////////// 
+    
+    const anoBissexto = ano => (ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0);
+    console.log(anoBissexto(parseInt(prompt("Digite um ano:")))
+    ? "É bissexto." : "Não é bissexto.")
+    
+    */
